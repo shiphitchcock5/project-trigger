@@ -4,8 +4,7 @@ language: node_js
 node_js:
   - 0.12
   - 0.10
-  
-  
+ 
 env:
   global:
     - PROJECT_ID="56cdeca3c77dae78a8e9aafd" 
