@@ -49,7 +49,4 @@ integrations:
       on_failure: always
       on_start: always
       on_success: always
-      branches:
-        only:
-          - webhook-postci-trigger
       
