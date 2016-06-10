@@ -16,7 +16,7 @@ env:
 build:
   ci:
   - echo $PROJECT_ID
-  - if [ "$SHIPPABLE_NODE_VERSION" == "0.12" ]; then foobar; fi
+ # - if [ "$SHIPPABLE_NODE_VERSION" == "0.12" ]; then foobar; fi
  # - JSON='{"projectId":"$PROJECT_ID","branchName":"master","type":"push"}'
  # - 'curl -H "Authorization: apiToken $SHIP_TOKEN" -H "Content-Type: application/json" -d "{\"projectId\": \"$PROJECT_ID\"}" https://apibeta.shippable.com/projects/$PROJECT_ID/newBuild'
 
@@ -49,7 +49,7 @@ integrations:
         - isPRBuild=$IS_PULL_REQUEST
         - branchName=$BRANCH
         - message=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
-        - FOO*=*BAR
+        - FOO=BAR
         - FIZZ=BUZZ
         
       on_failure: always
