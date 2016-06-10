@@ -52,8 +52,8 @@ integrations:
         - FIZZ=BUZZ
         
       on_failure: always
-      on_start: always
-      on_success: never
+      on_start: never
+      on_success: always
       branches:
         only:
           - webhook-postci-trigger
